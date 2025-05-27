@@ -1,0 +1,17 @@
+[package]
+name = "korra-rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["KORRA Team"]
+description = "Secure agent engine for KORRA"
+
+[lib]
+name = "korra_rust"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+base64 = "0.21"
+uuid = { version = "1.4", features = ["v4"] }
